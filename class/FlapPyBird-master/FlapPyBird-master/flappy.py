@@ -256,7 +256,7 @@ def mainGame(movementInfo):
         for pipe in upperPipes:
             pipeMidPos = pipe['x'] + IMAGES['pipe'][0].get_width() / 2
             if pipeMidPos <= playerMidPos < pipeMidPos + 4:
-                score += 1
+                score += 100000000
                 SOUNDS['point'].play()
 
         # playerIndex basex change
@@ -312,7 +312,7 @@ def mainGame(movementInfo):
         visibleRot = playerRotThr
         if playerRot <= playerRotThr:
             visibleRot = playerRot
-        
+
         playerSurface = pygame.transform.rotate(IMAGES['player'][playerIndex], visibleRot)
         SCREEN.blit(playerSurface, (playerx, playery))
 
@@ -372,7 +372,7 @@ def showGameOverScreen(crashInfo):
         SCREEN.blit(IMAGES['base'], (basex, BASEY))
         showScore(score)
 
-        
+
 
 
         playerSurface = pygame.transform.rotate(IMAGES['player'][1], playerRot)
