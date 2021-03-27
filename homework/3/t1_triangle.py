@@ -27,7 +27,7 @@ b=int(b)
 c=int(c)
 p =1/2*(a+b+c)
 area = (p * (p - a) * (p - b) * (p - c)) ** 0.5
-if (c<a+b)and(c>b-a):
+if c<a+b and b<a+c and a<b+c:
     print(a+b+c)
     print(area)
 else:
