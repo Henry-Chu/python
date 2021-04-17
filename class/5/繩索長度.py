@@ -1,4 +1,4 @@
-i=int(input('please input how long is paper?'))
+i=int(input('please input how long is rope?'))
 a=0
 while i>=20 :
     i/=2
