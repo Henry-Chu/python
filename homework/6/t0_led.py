@@ -17,7 +17,8 @@ a=0
 b=0
 for s in range(0,5):
     img_list[a]="99999"
-    print(img_list)
+    new_str=":".join(img_list)
+    print(new_str)
     a+=1
     img_list[b]="00000"
     b+=1
