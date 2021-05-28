@@ -40,7 +40,7 @@ def house(x, y):
     turtle.right(90)
     turtle.forward(40)
     turtle.end_fill()
-for s in range(0,10):
+for s in range(10):
     x=random.randint(-200,200)
     y=random.randint(-200,200)
     roof(x,y)
